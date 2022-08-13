@@ -14,6 +14,7 @@ const pMass = document.getElementById("p-mass")
 
 btnConvert.addEventListener("click", function() {
     let number = txtConvert.value
+    txtConvert.value = ""
     
     let length = `${number} meters = ${(feet * number).toFixed(3)} feet | ${number} feet = ${(number / feet).toFixed(3)} meters`
     let volume = `${number} meters = ${(gallon * number).toFixed(3)} gallons | ${number} gallons = ${(number / gallon).toFixed(3)} meters`
